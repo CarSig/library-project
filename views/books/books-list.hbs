@@ -1,0 +1,13 @@
+<h2>Books</h2>
+
+{{#each books}}
+  <div class="drone" style="border: 1px solid black; margin:10px; padding:10px; background-color:#ddd">
+    <h1>{{this.title}}</h1>
+    <h3>{{this.author.name}}</h3>
+
+    <p>rating: {{rating}}</p>
+    <a href="/books/{{_id}}">More Details</a>
+    <a href="/books/{{_id}}/edit">Edit</a>
+  </div>
+
+{{/each}}
